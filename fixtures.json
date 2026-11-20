@@ -1,0 +1,449 @@
+{
+  "mapping": [
+    {
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-104",
+      "load_id": "L-104"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-104",
+      "load_id": "L-104"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "load_id": "L-104"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-104",
+      "load_id": "L-104"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-105",
+      "load_id": "L-105"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-105",
+      "load_id": "L-105"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-105",
+      "load_id": "L-105"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-105",
+      "load_id": "L-105"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-106",
+      "load_id": "L-106"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-106",
+      "load_id": "L-106"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-106",
+      "load_id": "L-106"
+    },
+    {
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-106",
+      "load_id": "L-106"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "tms-L-104-2",
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-104",
+      "entity_id": "alvys-L-104",
+      "version": 2,
+      "payload": {
+        "status": "delivered"
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "gps-L-104",
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-104",
+      "entity_id": "samsara-L-104",
+      "version": 1,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "received_at": "2026-11-16T17:46:00Z",
+      "occurred_at": "2026-11-16T17:45:00Z"
+    },
+    {
+      "event_id": "tms-L-105-2",
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-105",
+      "entity_id": "alvys-L-105",
+      "version": 2,
+      "payload": {
+        "status": "delivered"
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "gps-L-105",
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-105",
+      "entity_id": "samsara-L-105",
+      "version": 1,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "received_at": "2026-11-16T17:46:00Z",
+      "occurred_at": "2026-11-16T17:45:00Z"
+    },
+    {
+      "event_id": "tms-L-106-2",
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-106",
+      "entity_id": "alvys-L-106",
+      "version": 2,
+      "payload": {
+        "status": "delivered"
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "gps-L-106",
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-106",
+      "entity_id": "samsara-L-106",
+      "version": 1,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "received_at": "2026-11-16T17:46:00Z",
+      "occurred_at": "2026-11-16T17:45:00Z"
+    },
+    {
+      "event_id": "tms-L-104-1",
+      "tenant": "fleet-a",
+      "source": "alvys",
+      "external_id": "alvys-L-104",
+      "entity_id": "alvys-L-104",
+      "version": 1,
+      "payload": {
+        "status": "in_transit"
+      },
+      "received_at": "2026-11-16T17:55:00Z",
+      "occurred_at": "2026-11-16T16:00:00Z"
+    },
+    {
+      "event_id": "pod-104",
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-104",
+      "entity_id": "documents-L-104",
+      "version": 1,
+      "payload": {
+        "pod_verified": true
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "invoice-104",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "entity_id": "invoice-204",
+      "version": 1,
+      "payload": {
+        "invoice_cents": 240000
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "invoice-104",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "entity_id": "invoice-204",
+      "version": 1,
+      "payload": {
+        "invoice_cents": 240000
+      },
+      "received_at": "2026-11-16T17:50:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "pay-104-2",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "entity_id": "payment-88",
+      "version": 2,
+      "payload": {
+        "payment_cents": 50000
+      },
+      "received_at": "2026-11-16T17:50:00Z",
+      "occurred_at": "2026-11-16T17:48:00Z"
+    },
+    {
+      "event_id": "pay-104-1",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "entity_id": "payment-88",
+      "version": 1,
+      "payload": {
+        "payment_cents": 240000
+      },
+      "received_at": "2026-11-16T17:58:00Z",
+      "occurred_at": "2026-11-16T17:30:00Z"
+    },
+    {
+      "event_id": "pod-106",
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-106",
+      "entity_id": "documents-L-106",
+      "version": 1,
+      "payload": {
+        "pod_verified": true
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "invoice-104",
+      "tenant": "fleet-b",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-104",
+      "entity_id": "quickbooks-L-104",
+      "version": 1,
+      "payload": {
+        "invoice_cents": 900000
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "pod-105",
+      "tenant": "fleet-a",
+      "source": "documents",
+      "external_id": "documents-L-105",
+      "entity_id": "documents-L-105",
+      "version": 1,
+      "payload": {
+        "pod_verified": true
+      },
+      "received_at": "2026-11-16T18:10:00Z",
+      "occurred_at": "2026-11-16T17:55:00Z"
+    },
+    {
+      "event_id": "unknown-truck",
+      "tenant": "fleet-a",
+      "source": "samsara",
+      "external_id": "samsara-L-999",
+      "entity_id": "samsara-L-999",
+      "version": 1,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "invoice-106-a",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-106",
+      "entity_id": "invoice-206",
+      "version": 3,
+      "payload": {
+        "invoice_cents": 180000
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    },
+    {
+      "event_id": "invoice-106-b",
+      "tenant": "fleet-a",
+      "source": "quickbooks",
+      "external_id": "quickbooks-L-106",
+      "entity_id": "invoice-206",
+      "version": 3,
+      "payload": {
+        "invoice_cents": 185000
+      },
+      "received_at": "2026-11-16T17:40:00Z",
+      "occurred_at": "2026-11-16T17:35:00Z"
+    }
+  ],
+  "notes": [
+    {
+      "name": "Supported delivery note",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-104",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "tms-L-104-2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Geofence promoted to delivery proof",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "gps-L-105"
+          }
+        ]
+      }
+    },
+    {
+      "name": "POD arrives after the decision",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "pod_verified",
+            "value": true,
+            "event_id": "pod-105"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Evidence belongs to another load",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "pod_verified",
+            "value": true,
+            "event_id": "pod-104"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Agent attempts to send a message",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-104",
+        "action": "send_customer_message",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "tms-L-104-2"
+          }
+        ]
+      }
+    }
+  ],
+  "release_checks": [
+    {
+      "id": "EVT-01",
+      "name": "Duplicate and reordered delivery",
+      "owner": "Integration developer",
+      "required": true,
+      "status": "passed",
+      "acceptance": "Replaying each event leaves the ledger unchanged; old versions cannot overwrite the current snapshot.",
+      "evidence": "test_engine.py: test_replay and test_reordered"
+    },
+    {
+      "id": "FIN-02",
+      "name": "Conflicting invoice version",
+      "owner": "Accounting integration developer",
+      "required": true,
+      "status": "failed",
+      "acceptance": "Resolve invoice-206 at its source and backfill a newer verified snapshot. Zero unresolved conflicting revisions.",
+      "evidence": "L-106 has two values at revision 3."
+    },
+    {
+      "id": "MAP-03",
+      "name": "Unknown truck identity",
+      "owner": "Operations owner + integration developer",
+      "required": true,
+      "status": "failed",
+      "acceptance": "Verify external identity with operations, add its fleet-scoped mapping, then replay the quarantined event.",
+      "evidence": "unknown-truck is unmapped."
+    },
+    {
+      "id": "DOC-04",
+      "name": "POD hold and late arrival",
+      "owner": "QA + operations owner",
+      "required": true,
+      "status": "passed",
+      "acceptance": "L-105 stays held at 18:00; available evidence at 18:10 can clear the POD hold on a later run.",
+      "evidence": "test_engine.py: test_point_in_time"
+    },
+    {
+      "id": "AI-05",
+      "name": "Unsupported agent actions",
+      "owner": "AI developer + QA",
+      "required": true,
+      "status": "passed",
+      "acceptance": "Unsupported, cross-load and post-decision claims are held. Only drafts reach human review.",
+      "evidence": "Five structured note fixtures."
+    },
+    {
+      "id": "REC-06",
+      "name": "Vendor reconciliation and shadow run",
+      "owner": "Technical PM + accounting owner",
+      "required": true,
+      "status": "not_run",
+      "acceptance": "Reconcile source exports to projection counts and cents for one agreed fleet; observe a full operations cycle and exercise rollback.",
+      "evidence": "No vendor accounts or production data are connected."
+    }
+  ]
+}

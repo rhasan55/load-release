@@ -1,0 +1,379 @@
+{
+  "as_of": "2026-11-16T18:00:00Z",
+  "loads": [
+    {
+      "load_id": "L-104",
+      "status": "delivered",
+      "pod": true,
+      "invoice_cents": 240000,
+      "payment_cents": 50000,
+      "gps": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "holds": [],
+      "evidence": [
+        "tms-L-104-2",
+        "pod-104",
+        "invoice-104",
+        "pay-104-2",
+        "gps-L-104"
+      ],
+      "invoice_action": "already_invoiced",
+      "balance_cents": 190000
+    },
+    {
+      "load_id": "L-105",
+      "status": "delivered",
+      "pod": null,
+      "invoice_cents": 0,
+      "payment_cents": 0,
+      "gps": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "holds": [
+        "pod_not_verified"
+      ],
+      "evidence": [
+        "tms-L-105-2",
+        "gps-L-105"
+      ],
+      "invoice_action": "hold",
+      "balance_cents": 0
+    },
+    {
+      "load_id": "L-106",
+      "status": "delivered",
+      "pod": true,
+      "invoice_cents": 0,
+      "payment_cents": 0,
+      "gps": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      },
+      "holds": [
+        "conflicting_revision"
+      ],
+      "evidence": [
+        "tms-L-106-2",
+        "pod-106",
+        "gps-L-106"
+      ],
+      "invoice_action": "hold",
+      "balance_cents": 0
+    }
+  ],
+  "trace": [
+    {
+      "load": "L-104",
+      "source": "alvys",
+      "event": "tms-L-104-2",
+      "version": 2,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "status": "delivered"
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "alvys",
+      "event": "tms-L-104-1",
+      "version": 1,
+      "received_at": "2026-11-16T17:55:00Z",
+      "used": false,
+      "payload": {
+        "status": "in_transit"
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "documents",
+      "event": "pod-104",
+      "version": 1,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "pod_verified": true
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "quickbooks",
+      "event": "invoice-104",
+      "version": 1,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "invoice_cents": 240000
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "quickbooks",
+      "event": "pay-104-2",
+      "version": 2,
+      "received_at": "2026-11-16T17:50:00Z",
+      "used": true,
+      "payload": {
+        "payment_cents": 50000
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "quickbooks",
+      "event": "pay-104-1",
+      "version": 1,
+      "received_at": "2026-11-16T17:58:00Z",
+      "used": false,
+      "payload": {
+        "payment_cents": 240000
+      }
+    },
+    {
+      "load": "L-104",
+      "source": "samsara",
+      "event": "gps-L-104",
+      "version": 1,
+      "received_at": "2026-11-16T17:46:00Z",
+      "used": true,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      }
+    },
+    {
+      "load": "L-105",
+      "source": "alvys",
+      "event": "tms-L-105-2",
+      "version": 2,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "status": "delivered"
+      }
+    },
+    {
+      "load": "L-105",
+      "source": "samsara",
+      "event": "gps-L-105",
+      "version": 1,
+      "received_at": "2026-11-16T17:46:00Z",
+      "used": true,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      }
+    },
+    {
+      "load": "L-106",
+      "source": "alvys",
+      "event": "tms-L-106-2",
+      "version": 2,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "status": "delivered"
+      }
+    },
+    {
+      "load": "L-106",
+      "source": "documents",
+      "event": "pod-106",
+      "version": 1,
+      "received_at": "2026-11-16T17:40:00Z",
+      "used": true,
+      "payload": {
+        "pod_verified": true
+      }
+    },
+    {
+      "load": "L-106",
+      "source": "samsara",
+      "event": "gps-L-106",
+      "version": 1,
+      "received_at": "2026-11-16T17:46:00Z",
+      "used": true,
+      "payload": {
+        "observed_at": "2026-11-16T17:45:00Z",
+        "observation": "destination geofence"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "kind": "unmapped_identity",
+      "event": "unknown-truck"
+    },
+    {
+      "kind": "conflicting_revision",
+      "load": "L-106",
+      "source": "quickbooks"
+    }
+  ],
+  "duplicates": 1,
+  "stale_versions": 2,
+  "received": 16,
+  "notes": [
+    {
+      "name": "Supported delivery note",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-104",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "tms-L-104-2"
+          }
+        ]
+      },
+      "result": {
+        "status": "review",
+        "reason": "supported_for_human_review"
+      }
+    },
+    {
+      "name": "Geofence promoted to delivery proof",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "gps-L-105"
+          }
+        ]
+      },
+      "result": {
+        "status": "hold",
+        "reason": "unsupported_claim"
+      }
+    },
+    {
+      "name": "POD arrives after the decision",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "pod_verified",
+            "value": true,
+            "event_id": "pod-105"
+          }
+        ]
+      },
+      "result": {
+        "status": "hold",
+        "reason": "missing_evidence"
+      }
+    },
+    {
+      "name": "Evidence belongs to another load",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-105",
+        "action": "draft_internal_note",
+        "claims": [
+          {
+            "field": "pod_verified",
+            "value": true,
+            "event_id": "pod-104"
+          }
+        ]
+      },
+      "result": {
+        "status": "hold",
+        "reason": "missing_evidence"
+      }
+    },
+    {
+      "name": "Agent attempts to send a message",
+      "proposal": {
+        "tenant": "fleet-a",
+        "load_id": "L-104",
+        "action": "send_customer_message",
+        "claims": [
+          {
+            "field": "delivery_status",
+            "value": "delivered",
+            "event_id": "tms-L-104-2"
+          }
+        ]
+      },
+      "result": {
+        "status": "hold",
+        "reason": "unauthorized_action"
+      }
+    }
+  ],
+  "release_checks": [
+    {
+      "id": "EVT-01",
+      "name": "Duplicate and reordered delivery",
+      "owner": "Integration developer",
+      "required": true,
+      "status": "passed",
+      "acceptance": "Replaying each event leaves the ledger unchanged; old versions cannot overwrite the current snapshot.",
+      "evidence": "test_engine.py: test_replay and test_reordered"
+    },
+    {
+      "id": "FIN-02",
+      "name": "Conflicting invoice version",
+      "owner": "Accounting integration developer",
+      "required": true,
+      "status": "failed",
+      "acceptance": "Resolve invoice-206 at its source and backfill a newer verified snapshot. Zero unresolved conflicting revisions.",
+      "evidence": "L-106 has two values at revision 3."
+    },
+    {
+      "id": "MAP-03",
+      "name": "Unknown truck identity",
+      "owner": "Operations owner + integration developer",
+      "required": true,
+      "status": "failed",
+      "acceptance": "Verify external identity with operations, add its fleet-scoped mapping, then replay the quarantined event.",
+      "evidence": "unknown-truck is unmapped."
+    },
+    {
+      "id": "DOC-04",
+      "name": "POD hold and late arrival",
+      "owner": "QA + operations owner",
+      "required": true,
+      "status": "passed",
+      "acceptance": "L-105 stays held at 18:00; available evidence at 18:10 can clear the POD hold on a later run.",
+      "evidence": "test_engine.py: test_point_in_time"
+    },
+    {
+      "id": "AI-05",
+      "name": "Unsupported agent actions",
+      "owner": "AI developer + QA",
+      "required": true,
+      "status": "passed",
+      "acceptance": "Unsupported, cross-load and post-decision claims are held. Only drafts reach human review.",
+      "evidence": "Five structured note fixtures."
+    },
+    {
+      "id": "REC-06",
+      "name": "Vendor reconciliation and shadow run",
+      "owner": "Technical PM + accounting owner",
+      "required": true,
+      "status": "not_run",
+      "acceptance": "Reconcile source exports to projection counts and cents for one agreed fleet; observe a full operations cycle and exercise rollback.",
+      "evidence": "No vendor accounts or production data are connected."
+    }
+  ],
+  "release": {
+    "decision": "hold",
+    "blockers": [
+      "FIN-02",
+      "MAP-03",
+      "REC-06"
+    ]
+  }
+}

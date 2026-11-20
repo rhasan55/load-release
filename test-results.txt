@@ -1,0 +1,19 @@
+test_conflicting_event_id (test_engine.EventChecks.test_conflicting_event_id) ... ok
+test_conflicting_revision (test_engine.EventChecks.test_conflicting_revision) ... ok
+test_cross_tenant (test_engine.EventChecks.test_cross_tenant) ... ok
+test_future_occurrence (test_engine.EventChecks.test_future_occurrence) ... ok
+test_gate_requires_actual_pass (test_engine.EventChecks.test_gate_requires_actual_pass) ... ok
+test_integer_cents (test_engine.EventChecks.test_integer_cents) ... ok
+test_known_balances (test_engine.EventChecks.test_known_balances) ... ok
+test_note_fixtures (test_engine.EventChecks.test_note_fixtures) ... ok
+test_note_tenant_and_schema (test_engine.EventChecks.test_note_tenant_and_schema) ... ok
+test_point_in_time (test_engine.EventChecks.test_point_in_time) ... ok
+test_reordered (test_engine.EventChecks.test_reordered) ... ok
+test_replay (test_engine.EventChecks.test_replay) ... ok
+test_sql_ledger_matches_python (test_engine.EventChecks.test_sql_ledger_matches_python) ... ok
+test_unmapped_identity (test_engine.EventChecks.test_unmapped_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.032s
+
+OK
